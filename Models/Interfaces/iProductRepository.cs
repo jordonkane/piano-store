@@ -1,6 +1,6 @@
 ﻿namespace piano_store.Models.Interfaces
 {
-    public interface iProductRepository
+    public interface IProductRepository
     {
         IEnumerable<Product> GetAllProducts();
         IEnumerable<Product> GetTrendingProducts();
