@@ -397,3 +397,5 @@ FodyWeavers.xsd
 # JetBrains Rider
 *.sln.iml
 piano-store.csproj.user
+piano-store.csproj.user
+obj/Debug/net7.0/piano-store.GeneratedMSBuildEditorConfig.editorconfig
