@@ -1,11 +1,15 @@
+using piano_store.Data;
 using piano_store.Models.Interfaces;
 using piano_store.Models.Services;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IProductRepository, ProductRepository>(); // register dependencies
+
+builder.Services.AddDbContext<PianoStoreDbContext>(option=>option.UseSqlServer(builder.Configuration.GetConnectionString("PianoStoreDbContextConnection"))); // access sql server
 
 var app = builder.Build();
 
