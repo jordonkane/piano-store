@@ -399,3 +399,14 @@ FodyWeavers.xsd
 piano-store.csproj.user
 piano-store.csproj.user
 obj/Debug/net7.0/piano-store.GeneratedMSBuildEditorConfig.editorconfig
+*.cache
+*.cache
+*.json
+obj/Debug/net7.0/piano-store.assets.cache
+obj/Debug/net7.0/piano-store.csproj.AssemblyReference.cache
+obj/Debug/net7.0/piano-store.csproj.AssemblyReference.cache
+obj/piano-store.csproj.nuget.dgspec.json
+obj/piano-store.csproj.nuget.g.props
+obj/piano-store.csproj.nuget.g.targets
+obj/project.assets.json
+obj/project.nuget.cache
