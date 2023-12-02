@@ -1,27 +1,48 @@
-﻿@model IEnumerable<piano_store.Models.Product>
-@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
-<!DOCTYPE html>
+    <section data-bs-version="5.1" class="info3 cid-tsEY2vwh5a mbr-parallax-background" id="info3-b">
 
-<html>
-<head>
-	<title>Southview Piano</title>
-</head>
-<body>
-	<h1>Shop</h1>
+    <div class="mbr-overlay" style="opacity:0.9; background-position: 25% 35%; background-size: 100%; background-image: url('https://papers.co/wallpaper/papers.co-bl15-art-piano-29-wallpaper.jpg');"></div>
 
-	@* Display a list of products *@
-	@foreach (var item in Model)
-	{
-		@* Product image *@
-		<img height="100" , width="100" src="@item.ImageUrl"/>
-		
-		@* Product hyperlink *@
-		<a asp-controller="Products" asp-action="Detail" asp-route-id="@item.Id"><h3>@item.Name</h3></a>
-		
-		@* Product price *@
-		<p>@item.Price.ToString("c")</p>
-	}
+        <div class="mbr-overlay" style="opacity: 0.7; background-color: rgb(0, 0, 0);"></div>
 
-</body>
-</html>
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="card col-12 col-lg-10">
+                    <div class="card-wrapper">
+                        <div class="card-box align-center">
+                            <h4 class="card-title mbr-fonts-style align-center mb-4 display-1">
+                                <strong>Pianos</strong>
+                            </h4>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section data-bs-version="5.1" class="content2 cid-tsEZVFGbrL" id="content2-g">
+
+
+        <div class="container">
+            <div class="mbr-section-head">
+
+                <h5 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2 display-5">Find your perfect piano.</h5>
+            </div>
+        <partial name="_ProductCard"></partial>
+        </div>
+    </section>
+    <section data-bs-version="5.1" class="footer7 cid-tsQdrs3Vrj" once="footers" id="footer7-13">
+        <div class="container">
+            <div class="media-container-row align-center mbr-white">
+                <div class="col-12">
+                    <p class="mbr-text mb-0 mbr-fonts-style display-7">
+                        © Copyright 2023&nbsp; - All Rights Reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>

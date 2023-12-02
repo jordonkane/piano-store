@@ -425,3 +425,4 @@ obj/piano-store.csproj.nuget.g.props
 *.cache
 piano-store.csproj
 piano-store.sln
+obj/Debug/net7.0/piano-store.GeneratedMSBuildEditorConfig.editorconfig
