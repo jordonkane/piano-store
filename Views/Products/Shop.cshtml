@@ -1,9 +1,8 @@
-﻿@model IEnumerable<Product>
-@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
     <section data-bs-version="5.1" class="info3 cid-tsEY2vwh5a mbr-parallax-background" id="info3-b">
 
-        <div class="mbr-overlay" style="opacity:0.9; background-image: url('https://images.unsplash.com/photo-1580933073521-dc49ac0d4e6a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&q=80');"></div>
+    <div class="mbr-overlay" style="opacity:0.9; background-position: 25% 35%; background-size: 100%; background-image: url('https://papers.co/wallpaper/papers.co-bl15-art-piano-29-wallpaper.jpg');"></div>
 
         <div class="mbr-overlay" style="opacity: 0.7; background-color: rgb(0, 0, 0);"></div>
 
@@ -14,7 +13,7 @@
                     <div class="card-wrapper">
                         <div class="card-box align-center">
                             <h4 class="card-title mbr-fonts-style align-center mb-4 display-1">
-                                <strong>Shop</strong>
+                                <strong>Pianos</strong>
                             </h4>
 
 
@@ -31,29 +30,9 @@
         <div class="container">
             <div class="mbr-section-head">
 
-                <h5 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2 display-5">The secret to a perfect cup , every time...</h5>
+                <h5 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2 display-5">Find your perfect piano.</h5>
             </div>
-            <div class="row mt-4">
-            @* Display a list of products *@
-            @foreach (var item in Model)
-            {
-                <div class="item features-image сol-12 col-md-6 col-lg-4">
-                    <div class="item-wrapper">
-                        <div class="item-img">
-                            <img src="@item.ImageUrl" alt="Piano Store" title="">
-                        </div>
-                        <div class="item-content">
-                            <a asp-controller="Products" asp-action="Detail" asp-route-id="@item.Id">
-                                <h6 class="item-subtitle mbr-fonts-style mt-1 display-7"><strong>Americano</strong></h6>
-                            </a>
-                            <p class="mbr-text mbr-fonts-style mt-3 display-7">@item.Price.ToString("c")</p>
-                        </div>
-                        <div class="mbr-section-btn item-footer mt-2"><a href="" class="btn item-btn btn-primary display-4" target="_self"><span class="mbrib-cart-add mbr-iconfont mbr-iconfont-btn"></span>Add to cart&nbsp;</a></div>
-                    </div>
-                </div>
-            }
-
-            </div>
+        <partial name="_ProductCard"></partial>
         </div>
     </section>
     <section data-bs-version="5.1" class="footer7 cid-tsQdrs3Vrj" once="footers" id="footer7-13">
@@ -61,7 +40,7 @@
             <div class="media-container-row align-center mbr-white">
                 <div class="col-12">
                     <p class="mbr-text mb-0 mbr-fonts-style display-7">
-                        © Copyright 2025&nbsp; - All Rights Reserved
+                        © Copyright 2023&nbsp; - All Rights Reserved
                     </p>
                 </div>
             </div>
