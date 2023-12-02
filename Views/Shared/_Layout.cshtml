@@ -1,4 +1,10 @@
-﻿<!DOCTYPE html>
+﻿@inject IHttpContextAccessor HttpContextAccessor
+
+@{
+    var cartCount = HttpContextAccessor?.HttpContext?.Session.GetInt32("CartCount") ?? 0;
+}
+
+<!DOCTYPE html>
 <html>
 <head>
   <!-- Site made with Coffee Shop v5.7.8, https://mobirise.com -->
@@ -10,7 +16,7 @@
   <meta name="description" content="">
   
   
-  <title>Home</title>
+  <title>Southview Piano Co.</title>
   <link rel="stylesheet" href="~/web/assets/mobirise-icons2/mobirise2.css">
   <link rel="stylesheet" href="~/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
   <link rel="stylesheet" href="~/bootstrap/css/bootstrap.min.css">
@@ -61,8 +67,8 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link text-black show display-4" href="page3.html">
-                                <span class="mobi-mbri mobi-mbri-shopping-bag mbr-iconfont mbr-iconfont-btn"><small>(0)</small></span>
+                            <a class="nav-link link text-black show display-4" asp-controller="ShoppingCart" asp-action="Index">
+                                <span class="mobi-mbri mobi-mbri-shopping-bag mbr-iconfont mbr-iconfont-btn"><small>(@cartCount)</small></span>
                             </a>
                         </li>
                     </ul>
