@@ -12,6 +12,7 @@ namespace piano_store.Data
 
 		// Properties (will be mapped database table name at runtime)
 		public DbSet<Product> Products { get; set; }
+		public DbSet<ShoppingCartItem> ShoppingCartItems { get; set; }
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
