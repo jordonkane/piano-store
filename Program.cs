@@ -10,6 +10,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 
 builder.Services.AddScoped<IShoppingCartRepository, ShoppingCartRepository>(ShoppingCartRepository.GetCart);
+builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 
 builder.Services.AddDbContext<PianoStoreDbContext>(option=>option.UseSqlServer(builder.Configuration.GetConnectionString("PianoStoreDbContextConnection"))); // access sql server
 builder.Services.AddSession();
