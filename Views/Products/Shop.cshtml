@@ -1,27 +1,15 @@
-﻿@model IEnumerable<piano_store.Models.Product>
+﻿@model IEnumerable<Product>
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
-<!DOCTYPE html>
-
-<html>
-<head>
-	<title>Southview Piano</title>
-</head>
-<body>
-	<h1>Shop</h1>
-
-	@* Display a list of products *@
-	@foreach (var item in Model)
+@* Display a list of products *@
+@foreach (var item in Model)
 	{
-		@* Product image *@
-		<img height="100" , width="100" src="@item.ImageUrl"/>
-		
-		@* Product hyperlink *@
-		<a asp-controller="Products" asp-action="Detail" asp-route-id="@item.Id"><h3>@item.Name</h3></a>
-		
-		@* Product price *@
-		<p>@item.Price.ToString("c")</p>
-	}
+	@* Product image *@
+	<img height="100" , width="100" src="@item.ImageUrl"/>
 
-</body>
-</html>
+	@* Product hyperlink *@
+	<a asp-controller="Products" asp-action="Detail" asp-route-id="@item.Id"><h3>@item.Name</h3></a>
+		
+	@* Product price *@
+	<p>@item.Price.ToString("c")</p>
+}
