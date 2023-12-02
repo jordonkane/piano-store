@@ -4,6 +4,6 @@
     {
         IEnumerable<Product> GetAllProducts();
         IEnumerable<Product> GetTrendingProducts();
-        Product GetProductDetail(int id);
+        Product? GetProductDetail(int id);
     }
 }
