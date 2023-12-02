@@ -1,4 +1,5 @@
 ﻿@model IEnumerable<piano_store.Models.Product>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
 <!DOCTYPE html>
 
@@ -12,8 +13,13 @@
 	@* Display a list of products *@
 	@foreach (var item in Model)
 	{
+		@* Product image *@
 		<img height="100" , width="100" src="@item.ImageUrl"/>
-		<h3>@item.Name</h3>
+		
+		@* Product hyperlink *@
+		<a asp-controller="Products" asp-action="Detail" asp-route-id="@item.Id"><h3>@item.Name</h3></a>
+		
+		@* Product price *@
 		<p>@item.Price.ToString("c")</p>
 	}
 

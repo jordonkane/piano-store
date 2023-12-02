@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\wears\OneDrive\Documents\GitHub\piano-store
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/wears/OneDrive/Documents/GitHub/piano-store/Views/Products/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/wears/OneDrive/Documents/GitHub/piano-store/Views/Products/Shop.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcU2hvcC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

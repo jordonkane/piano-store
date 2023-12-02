@@ -21,5 +21,21 @@ namespace piano_store.Controllers
             // Retrieve necessary data to be displayed in the view
             return View(productRepository.GetAllProducts());
         }
+
+        public IActionResult Detail(int id)
+        {
+            // Storing the product in a variable
+            var product = productRepository.GetProductDetail(id);
+
+            // Check if the variable is null
+            if(product == null)
+            {
+                // Return 404 in browser
+                return NotFound();
+            }
+
+            // Pass product in view
+            return View(product);
+        }
     }
 }
