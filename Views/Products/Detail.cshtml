@@ -21,7 +21,7 @@
                         <div class="cost">
                             <span class="currentcost mbr-fonts-style pr-2 display-2">@Model.Price.ToString("c")</span>
                         </div>
-                        <div class="mbr-section-btn pt-3"><a href="" class="btn btn-primary display-4"><span class="mbrib-cart-add mbr-iconfont mbr-iconfont-btn"></span>Add to cart&nbsp;</a></div>
+                    <div class="mbr-section-btn pt-3"><a asp-controller="ShoppingCart" asp-action="AddToShoppingCart" asp-route-pId="@Model.Id" class="btn btn-primary display-4"><span class="mbrib-cart-add mbr-iconfont mbr-iconfont-btn"></span>Add to cart&nbsp;</a></div>
                     </div>
                 </div>
             </div>
