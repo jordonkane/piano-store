@@ -423,3 +423,5 @@ obj/piano-store.csproj.nuget.g.props
 *.targets
 *.json
 *.cache
+piano-store.csproj
+piano-store.sln
