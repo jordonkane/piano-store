@@ -1,10 +1,11 @@
 ﻿using piano_store.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace piano_store.Data
 {
 	// Serves as a gateway to the database
-	public class PianoStoreDbContext : DbContext
+	public class PianoStoreDbContext : IdentityDbContext
 	{
 		public PianoStoreDbContext(DbContextOptions<PianoStoreDbContext>options) : base(options) // pass 'options' variable to base dbcontext class
 		{
