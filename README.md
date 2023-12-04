@@ -1,5 +1,5 @@
-# Southview Piano Company - Online Piano Store
-Currently deployed on Azure Websites! https://southviewpiano.azurewebsites.net/
+# Southview Piano Company - Online Piano Store 🎹
+🌐 Currently deployed on Azure Websites! https://southviewpiano.azurewebsites.net/
 
 #### Requirements:
 1. `.NET Core 7`
@@ -14,7 +14,7 @@ Currently deployed on Azure Websites! https://southviewpiano.azurewebsites.net/
 4. `Microsoft.EntityFrameworkCore.SqlServer` v7.0.2
 5. `Microsoft.EntityFrameworkCore.Tools` v7.0.2
 6. `Microsoft.NET.Test.Sdk` v7.0.2
-7. `Microsoft.VisualStudio.Web.CodeGeneration.Design` v7.0.11
+7. `Microsoft.VisualStudio.Web.CodeGeneration.Design` v7.0.2
 8. `xunit` v2.6.2
 9. `xunit.runner.visualstudio` v2.5.4
 10. `FakeItEasy` v8.0.0
