@@ -1,5 +1,6 @@
-# Southview Piano - Web Application
-Southview Piano is a local piano dealer.
+# Southview Piano Company - Online Piano Store
+Currently deployed on Azure Websites! https://southviewpiano.azurewebsites.net/
+
 #### Requirements:
 1. `.NET Core 7`
 2. `Visual Studio`
